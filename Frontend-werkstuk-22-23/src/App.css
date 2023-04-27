@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0000cb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tophead {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+header ul {
+  list-style: none;
+  display: flex;  
+  margin-right: 200px;
+
+}
+header a {
+margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+.tophead img {
+  width: 40px;
+height: fit-content;  
+margin-left: 200px;
+  box-shadow: 0.5px 0.5px 5px 1px white;
+  border-radius: 5px;
+
+}
+header #wiki {
+  margin-top: 50px;
+  width: 70%;
+}
+
+.searchbar {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  width: 35%;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+
+
+
+
+.searchbar input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 25px;
+
+ 
+}
+
+.filterbutton {
+  background-color: #0000cb;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: 8px;
+  cursor: pointer;
+  width: 18%;
+  box-shadow: inset 0 0 0 1px #fff, 0 0 0 2px #0000cb;
+
+}
+
+.filterbutton:hover {
+  background-color: #0069d9;
+}
+
+.searchbar i {
+  margin-left: 8px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.categories ul {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+padding: 0px;
+}
+
+.categories a {
+
+  justify-content: space-between;
+  background-color: #C9C7C7;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.categories a:hover {
+  color: #0000cb;
+  font-size: 20px;
+  padding: 12px;
+  transition-duration: 0.3s;
+}
+.leftop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+.language-dropdown {
+  margin-left: 30px;
+  display: flex;
+}
+.language-dropdown select {
+  background-color: transparent;
+  border: none;
+  color: white;
+  
+  cursor: pointer;
+  outline: none; 
+}
+.language-dropdown option {
+  background-color: #0000cb ;
+}
+
+.design {
+  background-color: red;
+}
