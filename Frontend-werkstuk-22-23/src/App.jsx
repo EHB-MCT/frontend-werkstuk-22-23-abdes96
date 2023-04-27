@@ -1,9 +1,10 @@
 import Logo from "./assets/logo.png";
 import Wikiwall from "./assets/Wikiwall.png";
 import "@fortawesome/fontawesome-free/css/all.css";
-import "./App.css";
 import Dropdownlanguage from "./component/languagedropdown";
 import Content from "./component/content";
+import "./App.css";
+
 function App() {
   return (
     <>

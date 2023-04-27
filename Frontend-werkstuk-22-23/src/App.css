@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -90,7 +90,9 @@ header #wiki {
   font-size: 16px;
   color: #ccc;
 }
-
+.categories {
+  margin-bottom: 100px;
+}
 .categories ul {
   margin: auto;
   display: flex;
@@ -108,6 +110,7 @@ padding: 0px;
   padding: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  position: relative;
 }
 .categories a:hover {
   color: #0000cb;
@@ -115,6 +118,7 @@ padding: 0px;
   padding: 12px;
   transition-duration: 0.3s;
 }
+
 .leftop {
   display: flex;
   justify-content: space-between;
@@ -136,6 +140,84 @@ padding: 0px;
   background-color: #0000cb ;
 }
 
-.design {
-  background-color: red;
+.outer {
+  display: flex;
+  background-color: #ffff;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 }
+.design {
+  background-color: #ffff;
+  border-radius: 30px;
+  box-shadow: 0px 1px 4px 0.1px;
+  width: 300px;
+  height: 400px;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-top: -20px; 
+}
+
+.featured {
+  background-color: #ffff;
+  border-radius: 35px;
+  box-shadow: 0px 1px 4px 0.1px;
+  width: 600px;
+  height: 400px;
+  margin-left: 10px; 
+  margin-right: auto;
+  position: relative;
+  margin-top: -20px; 
+}
+
+
+.outer button  {
+  background-color: #C9C7C7;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  margin: 20px;
+}
+
+.featured button {
+  background-color: #0000cb;
+  position: relative;
+  padding-left: 30px;
+}
+
+.featured i.fa-circle {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  font-size: 10px;
+  color: red;
+}
+
+.outer a {
+color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+
+}
+.short div {
+
+  margin: auto;
+  background-color: #ffff;
+  border-radius: 35px;
+  box-shadow: 0px 1px 4px 0.1px;
+  width: 200px;
+  height: 300px;
+  position: relative;
+}
+.short {
+  width: 60%;
+  display: flex;
+  margin-top: 20px;
+}
+
