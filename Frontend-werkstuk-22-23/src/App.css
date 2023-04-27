@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #0000cb;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .tophead {
@@ -14,28 +14,28 @@ body {
   justify-content: space-between;
 }
 header {
+  background-color: #0000cb;
+
   display: flex;
-flex-direction: column;
-align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 header ul {
   list-style: none;
-  display: flex;  
+  display: flex;
   margin-right: 200px;
-
 }
 header a {
-margin: 10px;
+  margin: 10px;
   color: white;
   text-decoration: none;
 }
 .tophead img {
   width: 40px;
-height: fit-content;  
-margin-left: 200px;
+  height: fit-content;
+  margin-left: 200px;
   box-shadow: 0.5px 0.5px 5px 1px white;
   border-radius: 5px;
-
 }
 header #wiki {
   margin-top: 50px;
@@ -53,10 +53,6 @@ header #wiki {
   padding: 5px;
 }
 
-
-
-
-
 .searchbar input[type="text"] {
   flex: 1;
   border: none;
@@ -64,8 +60,6 @@ header #wiki {
   font-size: 16px;
   outline: none;
   border-radius: 25px;
-
- 
 }
 
 .filterbutton {
@@ -78,7 +72,6 @@ header #wiki {
   cursor: pointer;
   width: 18%;
   box-shadow: inset 0 0 0 1px #fff, 0 0 0 2px #0000cb;
-
 }
 
 .filterbutton:hover {
@@ -97,13 +90,12 @@ header #wiki {
   margin: auto;
   display: flex;
   justify-content: center;
-padding: 0px;
+  padding: 0px;
 }
 
 .categories a {
-
   justify-content: space-between;
-  background-color: #C9C7C7;
+  background-color: #c9c7c7;
   color: #fff;
   font-size: 18px;
   border-radius: 15px;
@@ -132,22 +124,19 @@ padding: 0px;
   background-color: transparent;
   border: none;
   color: white;
-  
+
   cursor: pointer;
-  outline: none; 
+  outline: none;
 }
 .language-dropdown option {
-  background-color: #0000cb ;
+  background-color: #0000cb;
 }
 
-.outer {
+.first {
   display: flex;
-  background-color: #ffff;
-  width: 100%;
-  justify-content: space-around;
-  flex-direction: row;
+justify-content: center;
   flex-wrap: wrap;
-  
+  width: 70%;
 }
 .design {
   background-color: #ffff;
@@ -155,9 +144,9 @@ padding: 0px;
   box-shadow: 0px 1px 4px 0.1px;
   width: 300px;
   height: 400px;
-  margin-right: 20px;
+  margin-right: auto;
   margin-left: auto;
-  margin-top: -20px; 
+  margin-top: -20px;
 }
 
 .featured {
@@ -166,15 +155,13 @@ padding: 0px;
   box-shadow: 0px 1px 4px 0.1px;
   width: 600px;
   height: 400px;
-  margin-left: 10px; 
+  margin-left: -20px;
   margin-right: auto;
-  position: relative;
-  margin-top: -20px; 
+  margin-top: -20px;
 }
 
-
-.outer button  {
-  background-color: #C9C7C7;
+.outer button {
+  background-color: #c9c7c7;
   border: none;
   border-radius: 20px;
   padding: 15px;
@@ -199,25 +186,103 @@ padding: 0px;
 }
 
 .outer a {
-color: #fff;
+  color: #fff;
   font-size: 18px;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 .short div {
-
-  margin: auto;
+  margin-top: auto;
+  margin-left: -100px;
   background-color: #ffff;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
-  width: 200px;
+  width: 220px;
   height: 300px;
   position: relative;
 }
+#sports {
+  margin-left: 0;
+}
 .short {
-  width: 60%;
   display: flex;
   margin-top: 20px;
+  justify-content: space-around;
+width: 70%;}
+.outer {
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.last {
+  margin-top: 20px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+flex: 1;
+
+}
+.last .foryou {
+  margin: auto;
+  border-radius: 35px;
+  box-shadow: 0px 1px 4px 0.1px;
+  width: 450px;
+  height: 300px;
+}
+.last  i.fa-circle  {
+
+  color: green;
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  font-size: 10px;
+}
+.foryou button{
+  padding-left: 30px;
+  background-color: #0000cb;
 }
 
+
+.end {
+  display: flex;
+  width: 70%;
+
+}
+.discover {
+  margin-top: 20px;
+  flex: 1;
+  border-radius: 35px;
+  box-shadow: 0px 1px 4px 0.1px;
+  height: 600px;
+}
+
+.discover button{
+  padding-left: 30px;
+  background-color: #0000cb;
+}
+.discover i.fa-circle {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  font-size: 10px;
+  color: orange;
+}
+
+.sportdesign {
+  margin-top: 20px;
+ display: flex;
+ justify-content: space-around;
+
+}
+.sportdesign div {
+  background-color: #ffff;
+  border-radius: 35px;
+  box-shadow: 0px 1px 4px 0.1px;
+  width: 220px;
+  height: 250px;
+}
+.sportdesign #design {
+  width: 220px;
+  height: 400px;
+}

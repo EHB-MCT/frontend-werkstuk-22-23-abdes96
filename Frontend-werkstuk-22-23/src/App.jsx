@@ -4,6 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import Dropdownlanguage from "./component/languagedropdown";
 import Content from "./component/content";
 import "./App.css";
+import Footer from "./component/footer";
 
 function App() {
   return (
@@ -63,7 +64,7 @@ function App() {
     </header>
 
     <Content/>
-
+<Footer/>
 </>
   );
 }
