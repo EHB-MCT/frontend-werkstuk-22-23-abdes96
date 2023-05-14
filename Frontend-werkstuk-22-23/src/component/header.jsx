@@ -1,22 +1,15 @@
-import { useState, useEffect } from "react";
-import Logo from "./assets/logo.png";
-import Wikiwall from "./assets/Wikiwall.png";
-import "@fortawesome/fontawesome-free/css/all.css";
-import Dropdownlanguage from "./component/languagedropdown";
-import Content from "./component/content";
-import "./App.css";
-import Footer from "./component/footer";
-import Navbar from "./component/navbar";
+import Logo from "../assets/logo.png";
+import Wikiwall from "../assets/Wikiwall.png";
+import "../styles/App.css";
+import Dropdownlanguage from "./LanguageDropdown";
+import { Link } from "react-router-dom";
 
-function App() {
-
-  return (
-    <>
-        <Navbar showOnScroll={true} />
-      <header>
-        <div className="tophead">
+function Header() {
+    return (
+        <header>
+    <div className="tophead">
           <div className="leftop">
-            <img src={Logo} alt="" />
+          <Link to="/"> <img src={Logo} alt="" /></Link>
             <div className="language-dropdown">
               <Dropdownlanguage />
             </div>
@@ -63,12 +56,7 @@ function App() {
             </li>
           </ul>
         </div>
-      </header>
-
-      <Content />
-      <Footer />
-    </>
-  );
+        </header>
+    );
 }
-
-export default App;
+export default Header;

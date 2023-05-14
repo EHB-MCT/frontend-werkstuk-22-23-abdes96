@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import DropdownLanguage from "./LanguageDropdown";
 import Logo from "../assets/logo.png";
 import "../styles/nav.css";
+import { Link } from "react-router-dom";
 
 function Navbar({showOnScroll}) {
+  
   const [showNav, setShowNav] = useState(!showOnScroll);
 
   useEffect(() => {
@@ -26,7 +28,7 @@ function Navbar({showOnScroll}) {
     <nav className={showNav ? "show-nav" : ""}>
       <div className="navbar__top">
         <div className="navbar__left">
-          <img src={Logo} alt="" />
+        <Link to="/"> <img src={Logo} alt="" /></Link>
           <div className="navbar__language-dropdown">
             <DropdownLanguage />
           </div>
@@ -50,7 +52,33 @@ function Navbar({showOnScroll}) {
             </li>
           </ul>
         </div>
+       
       </div>
+      <div className="nav_categories">
+          <ul>
+            <li>
+              <a href="/design">Design</a>
+            </li>
+            <li>
+              <a href="/architecture">Architecture</a>
+            </li>
+            <li>
+              <a href="/art">Art</a>
+            </li>
+            <li>
+              <a href="/biology">Biology</a>
+            </li>
+            <li>
+              <a href="/sports">Sports</a>
+            </li>
+            <li>
+              <a href="/authors">Authors</a>
+            </li>
+            <li>
+              <a href="/geology">Geology</a>
+            </li>
+          </ul>
+        </div>
     </nav>
   );
 }

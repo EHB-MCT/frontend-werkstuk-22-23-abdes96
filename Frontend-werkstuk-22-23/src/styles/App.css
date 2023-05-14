@@ -134,11 +134,14 @@ header #wiki {
 
 .first {
   display: flex;
-justify-content: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 70%;
+    position: relative;
+
 }
 .design {
+  position: relative;
   background-color: #ffff;
   border-radius: 30px;
   box-shadow: 0px 1px 4px 0.1px;
@@ -150,6 +153,7 @@ justify-content: center;
 }
 
 .featured {
+  position: relative;
   background-color: #ffff;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
@@ -191,9 +195,8 @@ justify-content: center;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
-.short div {
+.short #littlebox {
   margin-top: auto;
-  margin-left: -100px;
   background-color: #ffff;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
@@ -201,14 +204,15 @@ justify-content: center;
   height: 300px;
   position: relative;
 }
-#sports {
+.sports {
   margin-left: 0;
 }
 .short {
   display: flex;
   margin-top: 20px;
   justify-content: space-around;
-width: 70%;}
+  width: 65%;
+}
 .outer {
   background-color: #ffff;
   display: flex;
@@ -217,47 +221,46 @@ width: 70%;}
 }
 .last {
   margin-top: 20px;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-flex: 1;
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+width: 470px;
 }
-.last .foryou {
+ .foryou {
+  position: relative;
   margin: auto;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
-  width: 450px;
+  width: 470px;
   height: 300px;
 }
-.last  i.fa-circle  {
-
+.last i.fa-circle {
   color: green;
   position: absolute;
   top: 40%;
   left: 10px;
   font-size: 10px;
 }
-.foryou button{
+.foryou button {
   padding-left: 30px;
   background-color: #0000cb;
 }
 
-
 .end {
   display: flex;
-  width: 70%;
-
+  justify-content: space-between;
+  width: 65%;
 }
 .discover {
+  position: relative;
   margin-top: 20px;
-  flex: 1;
+  width: 470px;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
   height: 600px;
 }
 
-.discover button{
+.discover button {
   padding-left: 30px;
   background-color: #0000cb;
 }
@@ -271,18 +274,43 @@ flex: 1;
 
 .sportdesign {
   margin-top: 20px;
- display: flex;
- justify-content: space-around;
-
+  display: flex;
+  justify-content: space-between;
 }
-.sportdesign div {
+ #sports  {
+  position: relative;
   background-color: #ffff;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
   width: 220px;
   height: 250px;
 }
+#design  {
+  position: relative;
+  background-color: #ffff;
+  border-radius: 35px;
+  box-shadow: 0px 1px 4px 0.1px;
+  width: 220px;
+  height: 250px;
+}
+
 .sportdesign #design {
+  
   width: 220px;
   height: 400px;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+left: 0;
+box-sizing: border-box;
+  width: 100%;
+padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color:#c9c7c7;
+  box-shadow: inset 0px 3px 10px -5px rgba(0, 0, 0, 0.3),
+    0px 1px 4px 0.1px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 30px 30px;
 }
