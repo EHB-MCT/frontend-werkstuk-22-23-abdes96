@@ -112,30 +112,32 @@ function HetOudeEgypte() {
           </animated.div>
         </div>
       </Parallax>
-      <Parallax strength={300} blur={{ min: 0, max: 10 }} bgImage={bg2}>
+      <Parallax strength={400} blur={{ min: 10, max: -10 }} bgImage={bg2}>
         <div className="content1">
           <div>
             <h2>De nijl</h2>
             <img className="volger2" src={Volger} alt="" />
           </div>
           <div id="nijl">
-            <p>
-              De Nijl is de langste rivier ter wereld en stroomt door elf landen
-              in Afrika. Het is de levensader van Egypte en heeft een enorme
-              invloed op de geschiedenis, cultuur en economie van het land. De
-              Nijl stroomt door de woestijn en zorgt voor vruchtbaar land langs
-              zijn oevers. Dit heeft geleid tot de ontwikkeling van een
-              bloeiende landbouwsector, die nog steeds een belangrijke rol
-              speelt in de economie van Egypte. De Nijl is ook van groot belang
-              voor de transportsector, waarbij de rivier fungeert als
-              belangrijke vaarroute voor vracht- en passagiersvervoer. Daarnaast
-              biedt de rivier ook mogelijkheden voor toerisme, waarbij bezoekers
-              kunnen genieten van cruises op de Nijl en de prachtige
-              landschappen langs de oevers.
-            </p>          </div>
+              <p>
+                De Nijl is de langste rivier ter wereld en stroomt door elf
+                landen in Afrika. Het is de levensader van Egypte en heeft een
+                enorme invloed op de geschiedenis, cultuur en economie van het
+                land. De Nijl stroomt door de woestijn en zorgt voor vruchtbaar
+                land langs zijn oevers. Dit heeft geleid tot de ontwikkeling van
+                een bloeiende landbouwsector, die nog steeds een belangrijke rol
+                speelt in de economie van Egypte. De Nijl is ook van groot
+                belang voor de transportsector, waarbij de rivier fungeert als
+                belangrijke vaarroute voor vracht- en passagiersvervoer.
+                Daarnaast biedt de rivier ook mogelijkheden voor toerisme,
+                waarbij bezoekers kunnen genieten van cruises op de Nijl en de
+                prachtige landschappen langs de oevers.
+              </p>
+          </div>
 
-            <div>            <img src={Image} alt="" />
-</div>
+          <div>
+              <img src={Image} alt="" />
+          </div>
         </div>
       </Parallax>
     </div>
