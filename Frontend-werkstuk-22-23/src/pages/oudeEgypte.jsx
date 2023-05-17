@@ -2,8 +2,10 @@ import ParallaxText from "../component/Parallaxtext";
 import "../styles/HetOudeEgypte.css";
 import imageI from "../assets/Groupe.png";
 import Volger from "../assets/volger.png";
+import Volger1 from "../assets/volger1.png";
+import Denijl from "../assets/denijl.jpg";
 import bg from "../assets/bg.jpg";
-import bg2 from "../assets/bg2.jpg";
+import clouds from "../assets/clouds.png";
 import Tijd from "../assets/tiijd.png";
 import Image from "../assets/image.png";
 import { Parallax } from "react-parallax";
@@ -23,18 +25,18 @@ function HetOudeEgypte() {
       config: { tension: 200, friction: 10 },
     }),
     {
-      rootMargin: "0% ",
+      rootMargin: "-20% ",
     }
   );
 
   const [ref, springs] = useInView(
     () => ({
-      from: { x: -400 },
-      to: { x: 0 },
+      from: { x: -200 },
+      to: { x: 0 ,y:-100},
       config: { tension: 200, friction: 10 },
     }),
     {
-      rootMargin: "-40% ",
+      rootMargin: "-30% 0% ",
     }
   );
 
@@ -48,9 +50,10 @@ function HetOudeEgypte() {
         opacity: 1,
         y: 0,
       },
+      delay:5
     }),
     {
-      rootMargin: "-20% ",
+      rootMargin: "-40% ",
     }
   );
   const [reff, springss] = useInView(
@@ -68,6 +71,8 @@ function HetOudeEgypte() {
       rootMargin: "-50% ",
     }
   );
+
+  
 
   return (
     <div className="outer1">
@@ -104,20 +109,32 @@ function HetOudeEgypte() {
           <animated.div ref={ref1} style={springs1} className="timeline">
             <motion.div
               whileHover={{ scale: 1.2 }}
-              animate={{ x: 50, y: -30 }}
               transition={{ type: "spring" }}
             >
               <img src={Tijd} alt="" />
             </motion.div>
           </animated.div>
+          
         </div>
+        <motion.div
+              whileHover={{ y: 200}}
+              transition={{ type: "spring" }}
+            >
+        <div id="clouds">
+          <img src={clouds} alt="" />
+          </div> </motion.div>
       </Parallax>
-      <Parallax strength={400} blur={{ min: 10, max: -10 }} bgImage={bg2}>
-        <div className="content1">
+      <Parallax  strength={200} blur={{ min: -5, max: 6 }} bgImage={Denijl}>
+        
+          <div className="content1">
+          <animated.div ref={ref} style={springs}>
+
           <div>
             <h2>De nijl</h2>
-            <img className="volger2" src={Volger} alt="" />
+            <img className="volger2" src={Volger1} alt="" />
           </div>
+          </animated.div>
+          
           <div id="nijl">
               <p>
                 De Nijl is de langste rivier ter wereld en stroomt door elf
@@ -138,6 +155,8 @@ function HetOudeEgypte() {
           <div>
               <img src={Image} alt="" />
           </div>
+          
+          
         </div>
       </Parallax>
     </div>

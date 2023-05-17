@@ -21,8 +21,7 @@ h1 {
 }
  
 .content {
-    height: 200vh;
-
+width: 100%;
 }
 .inleiding {
     display:flex;
@@ -30,7 +29,6 @@ h1 {
     font-size: 25px;
 }
 .inleiding div {
-    padding: 50px;
     display: flex;
     margin: auto;
 
@@ -39,29 +37,30 @@ p {
     width: 90vh;
 }
 .inleiding img {
-    width: 60vh;
+    width: 50vh;
 }
 .timeline  {
     width: 100%;
 display: flex;
 justify-content: center;
 margin-top:
-150px;
+270px;
 }
 .timeline img {
 height: 25vh;
 margin-top: 120px;
+margin-bottom: 120px;
 }
 
 .volger  {
     position: absolute;
     right: 50px;
-    margin-top: -100px;
-    height: 35vh;
+    margin-top: -50px;
+    height: 25vh;
 }
 
 .content1 {
-    height: 150vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -77,23 +76,37 @@ margin-top: 120px;
     display: flex;
     flex-direction: column;
     text-align: center;
-
+position: relative;
 
 }
+
+  
 .volger2  {
     left: 50px;
-    height: 35vh;
+    height: 30vh;
 }
-#nijl {
+
+#nijl p {
+    width: 90vh;
+    font-size: 20px;
     text-align: left;
+
+}
+.content1 div img {
+    width: 40vh;
+}
+
+#nijl {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-#nijl p {
-    width: 50vh;
-    font-size: 20px;
+
+#clouds {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
 }
-#nijl img {
-    width: 35vh;
+#clouds img {
+    height: 80vh;
 }
