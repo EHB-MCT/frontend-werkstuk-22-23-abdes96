@@ -1,112 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Egyptian+Hieroglyphs&family=Poppins:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Egyptian+Hieroglyphs&family=Poppins:wght@400;700&display=swap");
 
 .outer1 {
-    color: white;
+  color: white;
 }
 
 span {
   text-align: center;
   font-size: 20px;
-  font-family: 'Noto Sans Egyptian Hieroglyphs', sans-serif;
+  font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
   margin-bottom: 10px;
   justify-content: center;
   margin: auto;
 }
 
-
 h1 {
   text-align: center;
   font-size: 50px;
 }
- 
+
 .content {
-width: 100%;
+  width: 100%;
+  margin-top: 120px;
 }
 .inleiding {
-    display:flex;
-    text-align: right;
-    font-size: 25px;
+  display: flex;
+  text-align: right;
+  font-size: 25px;
 }
 .inleiding div {
-    display: flex;
-    margin: auto;
-
+  display: flex;
+  margin: auto;
 }
-p {
-    width: 90vh;
+.inleiding p {
+  width: 90vh;
 }
 .inleiding img {
-    width: 50vh;
+  width: 50vh;
 }
-.timeline  {
-    width: 100%;
-display: flex;
-justify-content: center;
-margin-top:
-270px;
+.timeline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 270px;
 }
 .timeline img {
-height: 25vh;
-margin-top: 120px;
-margin-bottom: 120px;
+  height: 25vh;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
-.volger  {
-    position: absolute;
-    right: 50px;
-    margin-top: -50px;
-    height: 25vh;
+.volger {
+  position: absolute;
+  right: 50px;
+  margin-top: -50px;
+  height: 25vh;
 }
 
 .content1 {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  width: 100vw;
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
 }
 
-  
-
-  
-  
-.content1 div {
-    margin: auto;
-    margin-top: 100px;
-
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-position: relative;
-
+.volger2 {
+  left: 50px;
+  height: 30vh;
+  width: 20vw;
 }
 
-  
-.volger2  {
-    left: 50px;
-    height: 30vh;
+.firstsection p {
+  font-size: 20px;
+  text-align: left;
+  width: 40vw;
 }
-
-#nijl p {
-    width: 90vh;
-    font-size: 20px;
-    text-align: left;
-
-}
-.content1 div img {
-    width: 40vh;
-}
-
-#nijl {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+#denijl img {
+  height: 80vh;
 }
 
 #clouds {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
 }
 #clouds img {
-    height: 80vh;
+  height: 80vh;
+}
+
+.firstsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+h2 {
+  display: flex;
+  font-size: 40px;
+  border-bottom: solid 3px;
+  height: 50px;
+  z-index: 1;
+  
+}
+.secondsection {
+}
+
+.denijl1 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.denijl1 p,
+.denijl2 p {
+  width: 30vw;
+}
+
+.secondsection #img {
+  display: flex;
+}
+#textil {
+  height: 40vh;
+  padding: 10px;
+  z-index: 1;
+}
+
+.denijlPath {
+  position: absolute;
+  display: flex;
+  width: 30%;
+  z-index: 1;
+}
+
+.denijl2 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.leftnijl {
+    display: flex;
+}
+.leftnijl div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -4,12 +4,18 @@ import Logo from "../assets/logo.png";
 import "../styles/nav.css";
 import { Link } from "react-router-dom";
 
-function Navbar({showOnScroll}) {
-  
+function Navbar({  showOnScroll = true }) {
   const [showNav, setShowNav] = useState(!showOnScroll);
 
   useEffect(() => {
     const onScroll = () => {
+
+
+      if (!showOnScroll) {
+        setShowNav(true);
+        return;
+      }
+
       if (window.scrollY > 400) {
         setShowNav(true);
       } else {
@@ -22,13 +28,25 @@ function Navbar({showOnScroll}) {
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
-  }, []);
+  }, [showOnScroll]);
+
+
+ 
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <nav className={showNav ? "show-nav" : ""}>
       <div className="navbar__top">
         <div className="navbar__left">
-        <Link to="/"> <img src={Logo} alt="" /></Link>
+          <Link to="/" onClick={scrollToTop}>
+            <img src={Logo} alt="" />
+          </Link>
           <div className="navbar__language-dropdown">
             <DropdownLanguage />
           </div>
@@ -52,33 +70,32 @@ function Navbar({showOnScroll}) {
             </li>
           </ul>
         </div>
-       
       </div>
       <div className="nav_categories">
-          <ul>
-            <li>
-              <a href="/design">Design</a>
-            </li>
-            <li>
-              <a href="/architecture">Architecture</a>
-            </li>
-            <li>
-              <a href="/art">Art</a>
-            </li>
-            <li>
-              <a href="/biology">Biology</a>
-            </li>
-            <li>
-              <a href="/sports">Sports</a>
-            </li>
-            <li>
-              <a href="/authors">Authors</a>
-            </li>
-            <li>
-              <a href="/geology">Geology</a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <a href="/design">Design</a>
+          </li>
+          <li>
+            <a href="/architecture">Architecture</a>
+          </li>
+          <li>
+            <a href="/art">Art</a>
+          </li>
+          <li>
+            <a href="/biology">Biology</a>
+          </li>
+          <li>
+            <a href="/sports">Sports</a>
+          </li>
+          <li>
+            <a href="/authors">Authors</a>
+          </li>
+          <li>
+            <a href="/geology">Geology</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

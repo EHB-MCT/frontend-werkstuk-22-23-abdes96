@@ -1,10 +1,9 @@
 import "@fortawesome/fontawesome-free/css/all.css";
 import { Routes, Route } from "react-router-dom";
-import Content from "./component/content";
+import Home from "./pages/home";
 import "./styles/App.css";
 import Footer from "./component/footer";
 import Navbar from "./component/navbar";
-import Header from "./component/header";
 import HetOudeEgypte from "./pages/oudeEgypte";
 
 function App() {
@@ -12,10 +11,9 @@ function App() {
 
     <>
       <Navbar showOnScroll={true} />
-      <Header />
       <Routes>
         <Route path="/de-oude-egypte" element={<HetOudeEgypte/>} />
-        <Route path="*" element={<Content />} />
+        <Route path="*" element={<Home />} />
       </Routes>
 
       <Footer />

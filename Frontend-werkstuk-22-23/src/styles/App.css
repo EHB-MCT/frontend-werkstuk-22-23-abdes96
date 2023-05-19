@@ -39,14 +39,15 @@ header a {
 }
 header #wiki {
   margin-top: 50px;
-  width: 70%;
+  width: 70vw;
 }
 
 .searchbar {
+  margin: auto;
   margin-top: 50px;
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 40vw;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 25px;
@@ -111,6 +112,19 @@ header #wiki {
   transition-duration: 0.3s;
 }
 
+.slogan  {
+  margin-top: -70px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+color: white;
+}
+.slogan p {
+  margin: auto;
+  padding-bottom:5px ;
+}
+
 .leftop {
   display: flex;
   justify-content: space-between;
@@ -134,9 +148,9 @@ header #wiki {
 
 .first {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 70%;
+  width: 65%;
     position: relative;
 
 }
