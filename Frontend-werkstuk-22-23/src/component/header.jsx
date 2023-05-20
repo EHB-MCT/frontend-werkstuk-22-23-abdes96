@@ -1,6 +1,5 @@
 import Logo from "../assets/logo.png";
 import Wikiwall from "../assets/Wikiwall.png";
-import "../styles/App.css";
 import Dropdownlanguage from "./LanguageDropdown";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";

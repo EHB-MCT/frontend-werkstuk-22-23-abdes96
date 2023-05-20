@@ -39,7 +39,7 @@ header a {
 }
 header #wiki {
   margin-top: 50px;
-  width: 70vw;
+  width: 60vw;
 }
 
 .searchbar {
@@ -117,7 +117,7 @@ header #wiki {
   margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
 color: white;
 }
 .slogan p {
@@ -164,11 +164,17 @@ color: white;
   margin-right: auto;
   margin-left: auto;
   margin-top: -20px;
+  cursor: pointer;
+  background-image: url("../assets/goden.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
 }
 
 .featured {
   position: relative;
-  background-color: #ffff;
+  background-image: url("../assets/goden.png");
+  background-size: 40vw;
+  background-repeat: no-repeat;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
   width: 600px;
@@ -176,6 +182,7 @@ color: white;
   margin-left: -20px;
   margin-right: auto;
   margin-top: -20px;
+  cursor: pointer;
 }
 
 .outer button {
@@ -217,21 +224,28 @@ color: white;
   width: 220px;
   height: 300px;
   position: relative;
+  cursor: pointer;
+  background-image: url("../assets/goden.png");
+  background-size: 30vw;
+  background-repeat: no-repeat;
 }
 .sports {
   margin-left: 0;
+
 }
 .short {
   display: flex;
   margin-top: 20px;
   justify-content: space-around;
   width: 65%;
+  
 }
 .outer {
   background-color: #ffff;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: auto;
 }
 .last {
   margin-top: 20px;
@@ -247,6 +261,11 @@ width: 470px;
   box-shadow: 0px 1px 4px 0.1px;
   width: 470px;
   height: 300px;
+  cursor: pointer;
+  background-image: url("../assets/goden.png");
+  background-size: 65vh;
+  background-repeat: no-repeat;
+
 }
 .last i.fa-circle {
   color: green;
@@ -266,12 +285,17 @@ width: 470px;
   width: 65%;
 }
 .discover {
+  background-image: url("../assets/goden.png");
+  background-size: 60vw;
+  background-repeat: no-repeat;
   position: relative;
   margin-top: 20px;
   width: 470px;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
   height: 600px;
+  cursor: pointer;
+
 }
 
 .discover button {
@@ -298,6 +322,11 @@ width: 470px;
   box-shadow: 0px 1px 4px 0.1px;
   width: 220px;
   height: 250px;
+  cursor: pointer;
+  background-image: url("../assets/goden.png");
+  background-size: 50vh;
+  background-repeat: no-repeat;
+
 }
 #design  {
   position: relative;
@@ -306,6 +335,11 @@ width: 470px;
   box-shadow: 0px 1px 4px 0.1px;
   width: 220px;
   height: 250px;
+  cursor: pointer;
+  background-image: url("../assets/goden.png");
+  background-size: 40vw;
+  background-repeat: no-repeat;
+
 }
 
 .sportdesign #design {
@@ -328,3 +362,5 @@ padding: 20px;
     0px 1px 4px 0.1px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 30px 30px;
 }
+
+

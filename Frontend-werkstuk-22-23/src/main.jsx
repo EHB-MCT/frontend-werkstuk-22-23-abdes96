@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
-import Home from "./home.jsx";
+import App from "./app.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Home />
+    <App />
   </BrowserRouter>
 );

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import DropdownLanguage from "./LanguageDropdown";
 import Logo from "../assets/logo.png";
-import "../styles/nav.css";
 import { Link } from "react-router-dom";
+import "../styles/nav.css";
 
 function Navbar({  showOnScroll = true }) {
   const [showNav, setShowNav] = useState(!showOnScroll);
