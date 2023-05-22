@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
-import DropdownLanguage from "./LanguageDropdown";
+import DropdownLanguage from "./languagedropdown";
 import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "../styles/nav.css";
 
-function Navbar({  showOnScroll = true }) {
+function Navbar({ showOnScroll = true }) {
   const [showNav, setShowNav] = useState(!showOnScroll);
 
   useEffect(() => {
     const onScroll = () => {
-
-
       if (!showOnScroll) {
         setShowNav(true);
         return;
@@ -29,9 +27,6 @@ function Navbar({  showOnScroll = true }) {
       window.removeEventListener("scroll", onScroll);
     };
   }, [showOnScroll]);
-
-
- 
 
   const scrollToTop = () => {
     window.scrollTo({
