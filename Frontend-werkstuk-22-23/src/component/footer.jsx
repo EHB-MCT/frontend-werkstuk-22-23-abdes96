@@ -1,5 +1,5 @@
 import "../styles/Footer.css";
-import wiki from "../assets/wikiwallf.png";
+import wiki from "../assets/Wikiwallf.png";
 
 function Footer() {
   return (
