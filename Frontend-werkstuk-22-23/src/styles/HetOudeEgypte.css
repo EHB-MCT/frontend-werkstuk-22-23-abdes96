@@ -154,8 +154,7 @@ h2 {
     align-items: center;
 }
 .sketchfab-embed-wrapper {
-  width: 100vw;
-  height: 100vh;
+  height: 80vw;
 }
 
 .outer1 {
@@ -166,21 +165,20 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
-  margin-top: -80px;
-  background-color: #f0d8c2;
-  border-radius: 50px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 80px;
+  width: 50vw;
+
 }
 
-h2 {
-  font-size: 64px;
+.Egypte h2 {
+  font-size: 20px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: CENTER;
 }
 
-.flag-container {
-  margin-bottom: 30px;
-}
+
 
 .flag {
   width: 20vw;
@@ -188,9 +186,11 @@ h2 {
 }
 
 .country-container {
+  display: flex;
+  justify-content: space-around;
   margin-top: 30px;
-  background-color: #ffffff;
-  padding: 20px;
+  background-color: #6e41b8;
+  padding: 50px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   max-width: 600px;
@@ -200,15 +200,12 @@ h2 {
 .info-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
-p {
-  font-size: 24px;
-  margin: 10px 0;
-  color: black;
-}
+
 .black-text {
-  color: black;
+  color: white;
 }
 @media (max-width: 768px) {
   h2 {

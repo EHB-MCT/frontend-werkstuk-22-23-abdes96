@@ -10,8 +10,17 @@ import Arch from "../../assets/architectuur.png";
 import Goden from "../../assets/goden.png";
 import Piramide from "../../assets/piramide.png";
 import { useRef } from "react";
+import useEgypt from "../../service/Api";
+import { TypeAnimation } from "react-type-animation";
+
+
 
 function Parallax2() {
+
+
+
+  const { data, loading, error } = useEgypt();
+
   const [ref, springs3] = useInView(
     () => ({
       from: { x: -100, opacity: 0 },
@@ -308,14 +317,57 @@ function Parallax2() {
               </div>
             </animated.div>
           </div>
+          <motion.div style={{ cursor: "pointer" }}
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring" }}
+               className="Egypt">
+          <h2> Egypte vandaag </h2>
+
+          {loading && <p>Loading data...</p>}
+          {error && <p>Error loading data: {error.message}</p>}
+          {data &&
+            data.map((country) => (
+              <div className="country-container" key={country.name.common}>
+                <div className="flag-container">
+                  <img
+                    src={country.flags.svg}
+                    alt="Country flag"
+                    className="flag"
+                  />
+                </div>
+                <div className="info-container">
+                  <TypeAnimation
+                    className="black-text"
+                    cursor={true}
+                    sequence={[`Hoofdstad: ${country.capital}`]}
+                  />
+                  <TypeAnimation
+                    className="black-text"
+                    cursor={true}
+                    sequence={[`Bevolking: ${country.population}`]}
+                  />
+                  <TypeAnimation
+                    className="black-text"
+                    cursor={true}
+                    sequence={[`Taal: ${country.languages.ara}`]}
+                  />
+                  <TypeAnimation
+                    className="black-text"
+                    cursor={true}
+                    sequence={[`Continent: ${country.region}`]}
+                  />
+                </div>
+              </div>
+            ))}
+        </motion.div>
           
         </div>
       </Parallax>
       <div className="sketchfab-embed-wrapper">
             <iframe
               title="Plateau de Gizeh"
-              width="100%"
-              height="100%"
+              width="99.8%"
+              height="99.8%"
               allowFullScreen
               mozallowfullscreen="true"
               webkitallowfullscreen="true"
