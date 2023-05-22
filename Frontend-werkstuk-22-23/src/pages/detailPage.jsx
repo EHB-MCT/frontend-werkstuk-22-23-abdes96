@@ -4,7 +4,6 @@ import Egypt from "../assets/goden.png";
 import Navbar from "../component/navbar";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-useEffect
 function Detail() {
 
     useEffect(() => {
