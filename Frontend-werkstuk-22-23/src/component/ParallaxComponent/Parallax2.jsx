@@ -14,12 +14,12 @@ import { useRef } from "react";
 function Parallax2() {
   const [ref, springs3] = useInView(
     () => ({
-      from: { x: -500, opacity: 0 },
+      from: { x: -100, opacity: 0 },
       to: { x: 0, opacity: 1 },
       config: { tension: 200, friction: 10 },
     }),
     {
-      rootMargin: "-40% 0% ",
+      rootMargin: "-50% 0% ",
     }
   );
 
@@ -51,7 +51,7 @@ function Parallax2() {
       },
     }),
     {
-      rootMargin: "-40% 0%",
+      rootMargin: "-50% 0%",
     }
   );
 
@@ -70,6 +70,48 @@ function Parallax2() {
       rootMargin: "-50% 0%",
     }
   );
+  const [ref6, springs7] = useInView(
+    () => ({
+      from: { x: 500, opacity: 0 },
+      to: { x: 0, opacity: 1 },
+      config: { tension: 200, friction: 10 },
+    }),
+    {
+      rootMargin: "-50% 0%",
+    }
+  );
+  const [ref7, springs8] = useInView(
+    () => ({
+      from: {
+        opacity: 0,
+        y: 100,
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+    }),
+    {
+      rootMargin: "-50% 0%",
+    }
+  );
+
+  const [ref8, springs9] = useInView(
+    () => ({
+      from: {
+        opacity: 0,
+        y: 100,
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+    }),
+    {
+      rootMargin: "-50% 0%",
+    }
+  );
+
   const refsvg = useRef(null);
   const { scrollYProgress } = useScroll({
     target: refsvg,
@@ -116,7 +158,7 @@ function Parallax2() {
           </div>
           <div className="secondsection">
             <div className="denijl1">
-              <animated.div ref={ref4} style={springs5}  id="img">
+              <animated.div ref={ref4} style={springs5} id="img">
                 <img id="textil" src={texti} alt="" />
                 <h2>De samenleving</h2>
               </animated.div>
@@ -189,7 +231,7 @@ function Parallax2() {
                   </g>
                 </svg>
               </div>
-              <div>
+              <animated.div ref={ref6} style={springs7}>
                 <img className="volger2" src={Volger} alt="" />{" "}
                 <p>
                   De samenleving van het oude Egypte was georganiseerd rond de
@@ -200,10 +242,10 @@ function Parallax2() {
                   rol. Het was een diepgaande en rijke cultuur met invloeden die
                   nog steeds voelbaar zijn vandaag de dag.
                 </p>
-              </div>
+              </animated.div>
             </div>
 
-            <animated.div ref={ref5} style={springs6}  className="denijl2">
+            <animated.div ref={ref5} style={springs6} className="denijl2">
               <div className="leftnijl">
                 <div>
                   <img className="volger2" src={Volger1} alt="" />
@@ -226,23 +268,25 @@ function Parallax2() {
                 <img id="textil" src={Arch} alt="" />
               </div>
             </animated.div>
-            <div className="denijl2">
-              <div id="img">
-                <img id="textil" src={Piramide} alt="" />
-                <h2>Piramide Gizeh</h2>
+            <animated.div ref={ref7} style={springs8}>
+              <div className="denijl2">
+                <div id="img">
+                  <img id="textil" src={Piramide} alt="" />
+                  <h2>Piramide Gizeh</h2>
+                </div>
+                <div>
+                  <img className="volger2" src={Volger} alt="" />{" "}
+                  <p>
+                    De Grote Piramide van Gizeh, ook bekend als de Piramide van
+                    Cheops, is een wonder van de oude techniek gelegen in Gizeh,
+                    Egypte. Het werd meer dan 4.500 jaar geleden gebouwd,
+                    tijdens de Oude Rijk periode van het oude Egypte, en is de
+                    oudste en grootste van de drie piramides in Gizeh.
+                  </p>
+                </div>
               </div>
-              <div>
-                <img className="volger2" src={Volger} alt="" />{" "}
-                <p>
-                  De Grote Piramide van Gizeh, ook bekend als de Piramide van
-                  Cheops, is een wonder van de oude techniek gelegen in Gizeh,
-                  Egypte. Het werd meer dan 4.500 jaar geleden gebouwd, tijdens
-                  de Oude Rijk periode van het oude Egypte, en is de oudste en
-                  grootste van de drie piramides in Gizeh.
-                </p>
-              </div>
-            </div>
-            <div className="denijl2">
+            </animated.div>
+            <animated.div ref={ref8} style={springs9} className="denijl2">
               <div className="leftnijl">
                 <div>
                   <img className="volger2" src={Volger1} alt="" />
@@ -262,10 +306,23 @@ function Parallax2() {
               <div id="img">
                 <img id="textil" src={Goden} alt="" />
               </div>
-            </div>
+            </animated.div>
           </div>
+          
         </div>
       </Parallax>
+      <div className="sketchfab-embed-wrapper">
+            <iframe
+              title="Plateau de Gizeh"
+              width="100%"
+              height="100%"
+              allowFullScreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              allow="autoplay; fullscreen"
+              src="https://sketchfab.com/models/b30a5047bd1e4b28a10e438df2bc1428/embed"
+            ></iframe>
+          </div>
     </>
   );
 }
