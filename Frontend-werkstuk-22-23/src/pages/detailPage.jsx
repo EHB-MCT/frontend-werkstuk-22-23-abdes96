@@ -14,7 +14,10 @@ function Detail() {
   const location = useLocation();
   const title = new URLSearchParams(location.search).get("title");
   const id = new URLSearchParams(location.search).get("id");
-
+  const backgroundImageStyles = Data.map((item) => ({
+    backgroundImage: `url(${item.picture})`,
+  }));
+  
 
   return (
     <motion.div
@@ -26,6 +29,7 @@ function Detail() {
       <div className="outer-container">
         <motion.div
           className="inner-container"
+          style={backgroundImageStyles[id]}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
