@@ -1,14 +1,16 @@
 {
-  "home": "abdes96.github.io/frontend-werkstuk-22-23-abdes96",
+  "home": "abdes96.github.io/frontend-werkstuk-22-23-abdes96/Frontend-werkstuk-22-23",
   "name": "frontend-werkstuk-22-23",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "deploy": "vite build && vite preview",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview" ,
+    "predeploy":"npm run build",
+     "deploy": "gh-pages -d build"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",

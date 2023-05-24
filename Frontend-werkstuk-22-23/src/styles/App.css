@@ -194,13 +194,23 @@ color: white;
   padding-bottom: 5px;
   position: relative;
   margin: 20px;
+  transition: 0.3s;
+}
+
+.outer button:hover {
+  padding-right: 30px;
+  background-color: #0000cb;
 }
 
 .featured button {
   background-color: #0000cb;
   position: relative;
   padding-left: 30px;
+  transition: padding 0.3s; 
+  cursor: pointer;
 }
+
+
 
 .featured i.fa-circle {
   position: absolute;
@@ -210,11 +220,12 @@ color: white;
   color: red;
 }
 
-.outer a {
+.outer button {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 .short #littlebox {
   margin-top: auto;
@@ -260,7 +271,6 @@ width: 470px;
   margin: auto;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
-  width: 470px;
   height: 300px;
   cursor: pointer;
   background-image: url("../assets/goden.png");
@@ -282,20 +292,22 @@ width: 470px;
 
 .end {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 65%;
 }
+
 .discover {
   background-image: url("../assets/goden.png");
   background-size: 60vw;
   background-repeat: no-repeat;
   position: relative;
   margin-top: 20px;
-  width: 470px;
   border-radius: 35px;
   box-shadow: 0px 1px 4px 0.1px;
   height: 600px;
   cursor: pointer;
+  width: 30vw;
+
 
 }
 
@@ -314,7 +326,7 @@ width: 470px;
 .sportdesign {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
  #sports  {
   position: relative;
@@ -358,10 +370,24 @@ box-sizing: border-box;
 padding: 20px;
   font-size: 25px;
   font-weight: bold;
-  color:#c9c7c7;
+  color:#ffff;
   box-shadow: inset 0px 3px 10px -5px rgba(0, 0, 0, 0.3),
     0px 1px 4px 0.1px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 30px 30px;
 }
 
 
+@media (min-width: 1700px) {
+
+.outer .first , .outer .end , .outer .short {
+  width: 60vw;
+}
+
+}
+@media (min-width: 1900px) {
+
+  .outer .first , .outer .end , .outer .short {
+    width: 55vw;
+  }
+  
+  }

@@ -121,6 +121,24 @@ function Parallax2() {
     }
   );
 
+  const [ref9, springs10] = useInView(
+    () => ({
+      from: {
+        opacity: 0,
+        y:100,
+       
+      },
+      to: {
+        opacity: 1,
+        y:0,
+     
+      },
+    }),
+    {
+      rootMargin: "-40% 0%",
+    }
+  );
+
   const refsvg = useRef(null);
   const { scrollYProgress } = useScroll({
     target: refsvg,
@@ -129,7 +147,7 @@ function Parallax2() {
 
   return (
     <>
-      <Parallax strength={400} blur={{ min: -10, max: 10 }} bgImage={Denijl}>
+      <Parallax strength={400} blur={{ min: -5, max: 10 }} bgImage={Denijl}>
         <div className="content1">
           <div className="firstsection">
             <animated.div ref={ref} style={springs3}>
@@ -317,6 +335,7 @@ function Parallax2() {
               </div>
             </animated.div>
           </div>
+          <animated.div ref={ref9} style={springs10}>
           <motion.div style={{ cursor: "pointer" }}
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring" }}
@@ -360,6 +379,7 @@ function Parallax2() {
               </div>
             ))}
         </motion.div>
+        </animated.div>
           
         </div>
       </Parallax>
@@ -373,7 +393,8 @@ function Parallax2() {
               webkitallowfullscreen="true"
               allow="autoplay; fullscreen"
               src="https://sketchfab.com/models/b30a5047bd1e4b28a10e438df2bc1428/embed"
-            ></iframe>
+            >       
+</iframe>
           </div>
     </>
   );

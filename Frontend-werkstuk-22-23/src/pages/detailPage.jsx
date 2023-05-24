@@ -4,6 +4,8 @@ import Egypt from "../assets/goden.png";
 import Navbar from "../component/navbar";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import Data from "../service/Data.json"
+
 function Detail() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -11,6 +13,8 @@ function Detail() {
 
   const location = useLocation();
   const title = new URLSearchParams(location.search).get("title");
+  const id = new URLSearchParams(location.search).get("id");
+
 
   return (
     <motion.div
@@ -37,38 +41,28 @@ function Detail() {
           }}
         >
           <div className="button-back">
-           <button>
-              <Link to="/home">Terug</Link>
-            </button></div>
+            <Link to="/home">
+             
+              <button> Terug </button>
+            </Link>
+          </div>
           <div className="titletopic">
-
             <h1>{title}</h1>
           </div>
           <div className="image-container">
-            
-            <img src={Egypt} alt="Image" />
+            <img src={Data[id].picture} alt="Image" />
             <p>
-              Hier kun je dieper duiken in de fascinerende wereld van deze oude
-              beschaving. Ontdek de betoverende architectuur, leer over de
-              intrigerende kunstvormen en verken de boeiende religieuze
-              overtuigingen van de oude Egyptenaren. Stap terug in de tijd
-              terwijl je meer te weten komt over de historische gebeurtenissen,
-              mythen en legendes die het oude Egypte hebben gevormd. Laat je
-              meeslepen door de mysteriën van de piramiden, de prachtige
-              hiërogliefen en de rituelen van farao's. Geniet van een boeiende
-              reis door deze bijzondere en eeuwenoude beschaving op deze
-              detailpagina.
+              {Data[id].description}
             </p>
           </div>
 
           <div className="author-container">
-            <h2>Auteur: Abdeslam Boutaarourt</h2>
+            <h2>Auteur: {Data[id].author}</h2>
           </div>
           <div className="button-container">
             <button>
-              <Link to="/de-oude-egypte">Meer Info</Link>
-            </button>
-           
+              <a href={Data[id].link}>Meer info</a>       
+                   </button>
           </div>
         </motion.div>
       </div>

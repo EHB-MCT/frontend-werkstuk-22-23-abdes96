@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import DropdownLanguage from "./languagedropdown";
+import Dropdownlanguage from "./languagedropdown";
 import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "../styles/nav.css";
@@ -16,7 +16,7 @@ function Navbar({ showOnScroll = true }) {
 
       if (window.scrollY > 400) {
         setShowNav(true);
-      } else {
+      } else  {
         setShowNav(false);
       }
     };
@@ -43,7 +43,7 @@ function Navbar({ showOnScroll = true }) {
             <img src={Logo} alt="" />
           </Link>
           <div className="navbar__language-dropdown">
-            <DropdownLanguage />
+            <Dropdownlanguage />
           </div>
         </div>
         <div className="navbar__search-bar">
