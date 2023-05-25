@@ -7,22 +7,26 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview" ,
-    "predeploy":"npm run build",
-     "deploy": "gh-pages -d build"
-
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@motionone/utils": "^10.15.1",
+    "@react-three/drei": "^9.69.2",
     "framer-motion": "^10.12.12",
+    "gsap": "^3.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax": "^3.5.1",
+    "react-reconciler": "^0.20.4",
     "react-router-dom": "^6.10.0",
     "react-spring": "^9.7.1",
+    "react-three-fiber": "^6.0.13",
     "react-type-animation": "^3.0.1",
-    "react-reconciler": "^0.20.4"
+    "split-type": "^0.3.3",
+    "three": "^0.152.2"
   },
   "devDependencies": {
     "vite": "^4.3.2"

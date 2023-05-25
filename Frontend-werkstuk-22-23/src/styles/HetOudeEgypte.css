@@ -211,6 +211,13 @@ margin-bottom: 100px;
 .black-text {
   color: white;
 }
+
+.char {
+
+  transform: translateY(115px);
+  transition: transform .5s;
+
+}
 @media (max-width: 768px) {
   h2 {
     font-size: 36px;
