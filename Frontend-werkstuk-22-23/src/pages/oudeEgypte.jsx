@@ -14,6 +14,7 @@ function HetOudeEgypte() {
       exit={{ opacity: 0 }}
       delay={{  }} 
     >
+      <Navbar showOnScroll={false} />
 
       <div className="outer1">
         <Parallax1 />

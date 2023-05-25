@@ -16,7 +16,8 @@ function Navbar({ showOnScroll = true }) {
 
       if (window.scrollY > 400) {
         setShowNav(true);
-      } else  {
+      }
+       else  {
         setShowNav(false);
       }
     };
