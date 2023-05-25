@@ -134,9 +134,9 @@ function Parallax1() {
           
           <Canvas style={{ height: "70vh", width: "100vw" }}>
             <ambientLight />
-            <Object position={[0, -3, 0]} scale={[0.025, 0.025, 0.025]} />
+            <Object position={[0, -2.58, 0]} scale={[0.025, 0.025, 0.025]} />
             <Text
-              position={[3, 2.7, 1]}
+              position={[3, 2.9, 1]}
               fontSize={0.18}
               anchorX="right"
               fontWeight="bold"
